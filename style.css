@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* general */
+
+h1,
+h2,
+h3 {
+    margin-bottom: 20px;
+}
+a{
+    color: #222;
+    text-decoration: none;
+}
+html,
+body{
+    font-family: "Raleway", sans-serif;
+    
+}
+.header{
+    background: #767A85;
+    height: 60px;
+    overflow: auto;
+    
+}
+.header nav ul {
+    list-style: none;
+    overflow: hidden;
+   
+}
+.header nav ul li{
+    float: left;
+   
+}
+.header nav ul li a{
+    padding: 10px;
+    color: black;
+    margin: 10px;
+   display: block;
+    
+}
+.header nav ul li a:hover{
+    color: #D2CCCB;
+}
+
+.search_box{
+    position: relative;
+  display: inline-block;
+    background-color: #eee;
+    width: 330px;
+    height: 50px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 25px ;
+    margin: 5px;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    position: relative;
+    justify-content: space-between;
+}
+.search-bar{
+    width: 200px; 
+    padding: 5px 25px 5px 10px; 
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    
+}
+  .searchloop{
+   width: 20px;
+  }
+
+  .titlesite{
+    font-family: "Pacifico", sans-serif;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    
+  }
+  .container p{
+    display: flex;
+    justify-content: center;
+  }
+  hr{
+    margin: 20px;
+  }
+ 
+  .pictures1 img{
+    width: 200px;
+    height: 145px;
+    position: relative;
+    left: 15%;
+    margin: 0 30px;
+    
+    
+  }
+  .pictures2 img{
+    width: 200px;
+    height: 145px;
+    position: relative;
+    left: 15%;
+    margin: 0 30px;
+    
+    
+  }
+    #about h2{
+        color: red;
+        display: flex;
+        justify-content: flex-start;
+        margin: 20px 50px;
+        text-decoration: underline;
+
+
+  }
+  #about p{
+    
+   margin: 0px 50px;
+
+  }
+
+
+  #service h2{
+    color: red;
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px 50px;
+    text-decoration: underline;
+
+
+}
+
+#service p{
+    
+    margin: 0px 50px;
+    margin-top: 20px;
+ 
+ }
+
+ .services{
+    display: flex;
+    justify-content: center;
+    margin: 0px 50px;
+    margin-bottom: 100px;
+ }
+.service1,.service2,.service3 {
+    text-align: center;
+}
+
+  /* CSS Entreprise */
+
+
+ 
+.team-picture img{
+   max-width: 100%;
+}
+.team h1{
+    color: red;
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px 50px;
+    text-decoration: underline;
+}
+.slider-container:not(h1){
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    height: 350px;
+    overflow: hidden;
+   
+}
+.menu{
+    position: absolute;
+    left: 0;
+    z-index: 11;
+    width: 100%;
+    bottom:0;
+    text-align: center;
+}
+.menu label{
+    cursor:pointer;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background:#ccc;
+    border-radius: 50px;
+    margin: 0 0.2em 1em;
+}
+.menu label:hover,.menu label:focus {
+    background: #1c87c9;
+}
+.slide-input{
+    opacity: 0;
+}
+.slide-img{
+    max-width:100%;
+    height: 250px;
+    margin: 0px 200px;
+    position:absolute;
+    top: 20;
+    bottom: 5;
+    left: 100%;
+    z-index: 10;
+    transition: left 0s 0.75s;
+}
+[id^="slide"]:checked + .slide-img{
+    left: 0;
+    z-index: 100;
+    transform: left 0.65s ease-out;
+}
+.slider-container h1{
+   text-align: center;
+   text-decoration: underline;
+   color: red;
+}
+
+/* CSS contact */
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+	
+	#form-outer
+	{
+		background-color: rgb(250, 250, 250);
+		margin:0 auto;
+		border-radius: 6px;
+		width: 55%;
+		max-width: 900px;
+		padding: 10px;
+		padding-top: 30px;
+	}
+	.labels
+	{
+		display: inline-block;
+		text-align: right;
+		width: 40%;
+		padding: 5px;
+		vertical-align: top;
+		margin-top: 10px;
+	}
+	.rightTab
+	{
+		display: inline-block;
+		text-align: left;
+		width: 48%;
+		vertical-align: middle;
+	}
+	.input-field
+	{
+		height: 20px;
+		width: 280px;
+		padding: 5px;
+		margin:10px;
+		border: 1px solid #c0c0c0;
+		border-radius: 2px;
+	}
+    .civility
+	{
+		display: inline-block;
+		text-align: right;
+		width: 53%;
+		padding: 5px;
+		vertical-align: top;
+		margin-top: 10px;
+	}
+    .secrecy
+	{
+		display: inline-block;
+		text-align: right;
+		width: 90%;
+		padding: 0px 40px;
+		vertical-align: top;
+		margin-top: 16px;
+        margin-left: 1px;
+	}
+	#userAge
+	{
+		width: 40px;
+	}
+	.userRatings, input[type="checkbox"] 
+	{
+		float: left;
+		margin-left: 270px;
+        margin-top: 2px;
+        margin: 5px 0px 0px 200px;
+	}	
+	#submit {
+        background-color: #59ace0;
+        border-radius: 4px;
+        color: white;
+        font-size: 1em;
+        height: 40px;
+        width: 96px;
+        border: 0px solid;
+    }
+	.dropdown 
+	{
+		height: 35px;
+		width: 140px;
+		padding: 5px;
+		margin: 10px;  
+		margin-top: 15px;
+		border: 1px solid #c0c0c0;
+		border-radius: 2px;
+	}
+	.radio, .checkbox
+	{
+		position: relative;
+		left: -43px;
+		margin-left: 10px;
+		display: block;
+		padding-bottom: 10px;
+	}
+	@media screen and (max-width: 833px) 
+	{
+		.input-field 
+		{
+			width: 80%;
+		}
+		select 
+		{
+			width: 90%;
+		}
+	}
+
+	@media screen and (max-width: 520px) 
+	{
+		.labels 
+		{
+			width: 100%;
+			text-align: left;
+		}
+		.rightTab 
+		{
+			width: 80%;
+			float: left;
+		}
+		.input-field 
+		{
+			width: 100%;
+		}
+		select 
+		{
+			width: 100%;
+		}
+	}
+    /* CSS réalisation */
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        width: 100%;
+        height: 100vh; 
+    }
+
+    .div1 { grid-area: 1 / 2 / 2 / 3; }
+    .div2 { grid-area: 1 / 3 / 2 / 4; }
+    .div3 { grid-area: 1 / 4 / 2 / 5; }
+    .div4 { grid-area: 2 / 2 / 3 / 3; }
+    .div5 { grid-area: 2 / 3 / 3 / 4; }
+    .div6 { grid-area: 2 / 4 / 3 / 5; }
+    .div7 { grid-area: 3 / 2 / 4 / 3; }
+    .div8 { grid-area: 3 / 3 / 4 / 4; }
+    .div9 { grid-area: 3 / 4 / 4 / 5; }
+
+    .children {
+        width: 85%;
+        height: 85%;
+        border: 1px solid #222;
+    }
